@@ -1,17 +1,4 @@
-@font-face { font-family: ubuntuLight; src: url('../fonts/Ubuntu-L.ttf');}
-@font-face { font-family: ubuntuRegular; src: url('../fonts/Ubuntu-R.ttf');}
-@font-face { font-family: ubuntuMedium; src: url('../fonts/Ubuntu-M.ttf');}
-@font-face { font-family: ubuntuBold; src: url('../fonts/Ubuntu-B.ttf');}
-@font-face {
-  font-family: 'fontIcon';
-  src: url('../fonts/UDiconwebfont-Regular.eot');
-  src: 
-  	url('../fonts/UDiconwebfont-Regular.woff2') format('woff2'), 
-  	url('../fonts/UDiconwebfont-Regular.woff') format('woff'), 
-  	url('../fonts/UDiconwebfont-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+@font-face {font-family: 'Open Sans', sans-serif;}
 
 //$font-size: 16; // Your base font-size in pixels
 //$em: $font-size*1em; // Shorthand for outputting ems, e.g. "12/$em"
@@ -66,11 +53,10 @@ $colorWhite: #FFFFFF;
 //-- colors:end --//
 
 //-- typo:start --//
-$fontLight: "ubuntuLight", Helvetica, sans-serif; // 300, 700
-$fontRegular: "ubuntuRegular", Helvetica, sans-serif; // 300, 700
-$fontMedium: "ubuntuMedium", Helvetica, sans-serif; // 300, 700
-$fontBold: "ubuntuBold", Helvetica, sans-serif; // 300, 700
-$fontIcons: "fontIcon"; // Icones
+$fontLight: "Open Sans", Helvetica, sans-serif; // 300, 700
+$fontRegular: "Open Sans", Helvetica, sans-serif; // 300, 700
+$fontMedium: "Open Sans", Helvetica, sans-serif; // 300, 700
+$fontBold: "Open Sans", Helvetica, sans-serif; // 300, 700
 //-- typo:end --//
 
 
