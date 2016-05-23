@@ -1,0 +1,101 @@
+@font-face { font-family: ubuntuLight; src: url('../fonts/Ubuntu-L.ttf');}
+@font-face { font-family: ubuntuRegular; src: url('../fonts/Ubuntu-R.ttf');}
+@font-face { font-family: ubuntuMedium; src: url('../fonts/Ubuntu-M.ttf');}
+@font-face { font-family: ubuntuBold; src: url('../fonts/Ubuntu-B.ttf');}
+@font-face {
+  font-family: 'fontIcon';
+  src: url('../fonts/UDiconwebfont-Regular.eot');
+  src: 
+  	url('../fonts/UDiconwebfont-Regular.woff2') format('woff2'), 
+  	url('../fonts/UDiconwebfont-Regular.woff') format('woff'), 
+  	url('../fonts/UDiconwebfont-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//$font-size: 16; // Your base font-size in pixels
+//$em: $font-size*1em; // Shorthand for outputting ems, e.g. "12/$em"
+
+$column: 60; // The column-width of your grid in pixels
+$gutter: 20; // The gutter-width of your grid in pixels
+
+$break-small: 320px;
+$break-medium: 768px;
+$break-large: 1024px;
+
+$transitionSpeed: 0.18s;
+$transitionType: ease-out;
+
+$vRhythm: 1rem;
+
+//-- colors:start --//
+$colorRestletBlue: #55a7d9;
+$colorRestletDarkAnthracite: #284249;
+$colorRestletMediumAnthracite: #485b73;
+$colorRestletLightAnthracite: #5a788b;
+$colorRestletGreen: #89b76c;
+$colorRestletOrange: #f5821f;
+$colorRestletYellow: #f6b11a;
+
+$colorGreenLow: #74a467;
+$colorGreen: #8fc581;
+$colorGreenLight: #b3d2a5;
+$colorRedLow: #cd444d;
+$colorRed: #D44C57;
+$colorRedLight: #DC7580;
+$colorYellowLow: #c3b615;
+$colorYellow: #e3d851;
+$colorYellowLight: #E8E18A;
+$colorBlueLow: #518ece;
+$colorBlue: #74a5d8;
+$colorBlueLight: #9DBADE;
+
+$colorTextDark: #242424;
+$colorTextBlue: #485B73;
+$colorTextGrey: #777777;
+$colorTextLightGrey: #C1C1C1;
+
+$colorDark: #121212;
+$colorGreyDark: #323232;
+$colorGrey: #565656;
+$colorLightGrey: #CCCCCC;
+$colorLighterGrey: #EFEFEF;
+$colorTransparentGrey: #F5F5F5;
+$colorAlmostWhite: #FAFAFA;
+$colorWhite: #FFFFFF;
+//-- colors:end --//
+
+//-- typo:start --//
+$fontLight: "ubuntuLight", Helvetica, sans-serif; // 300, 700
+$fontRegular: "ubuntuRegular", Helvetica, sans-serif; // 300, 700
+$fontMedium: "ubuntuMedium", Helvetica, sans-serif; // 300, 700
+$fontBold: "ubuntuBold", Helvetica, sans-serif; // 300, 700
+$fontIcons: "fontIcon"; // Icones
+//-- typo:end --//
+
+
+
+// Test basé sur :
+// http://blog.cloudfour.com/responsive-guide-to-type-sizing/
+//
+// Modular Scale :
+// http://www.modularscale.com/?1&em&1.125&sass&text
+
+$baseEm: 0.875em;
+$baseLH: 1.5em;
+
+$ratio: 1.125;
+$ratioLH: 1.067;
+
+$msSmall: 0.85714;
+$ms0: 1;
+$ms1: $ratio;
+$ms2: $ratio*$ms1;
+$ms3: $ratio*$ms2;
+$ms4: $ratio*$ms3;
+$ms5: $ratio*$ms4;
+$ms6: $ratio*$ms5;
+$ms7: $ratio*$ms6;
+$ms8: $ratio*$ms7;
+$ms9: $ratio*$ms8;
+

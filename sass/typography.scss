@@ -1,0 +1,40 @@
+@import 'variables';
+
+@media screen and (min-width: $break-small) {
+	p{ font-size: $baseEm; line-height: $baseLH;}
+	h6{ font-size: $baseEm/$ms1; line-height: $baseLH;}
+	h5{ font-size: $baseEm/$ms1; line-height: $baseLH; }
+	h4{ font-size: $baseEm/$ms1; line-height: $baseLH; }
+	h3{ font-size: $baseEm*$ms2; line-height: $baseLH/$ratioLH; }
+	h2{ font-size: $baseEm*$ms3; line-height: $baseLH/$ratioLH/$ratioLH; }
+	h1{ font-size: $baseEm*$ms4; line-height: $baseLH/$ratioLH/$ratioLH/$ratioLH; }
+}
+@media screen and (min-width: $break-medium) {
+	p{ font-size: $baseEm; line-height: $baseLH;}
+	h6{ font-size: $baseEm*$ms0; line-height: $baseLH;}
+	h5{ font-size: $baseEm*$ms0; line-height: $baseLH; }
+	h4{ font-size: $baseEm*$ms1; line-height: $baseLH; }
+	h3{ font-size: $baseEm*$ms2; line-height: $baseLH/$ratioLH; }
+	h2{ font-size: $baseEm*$ms4; line-height: $baseLH/$ratioLH/$ratioLH; }
+	h1{ font-size: $baseEm*$ms5; line-height: $baseLH/$ratioLH/$ratioLH/$ratioLH; }
+}
+ 
+@media screen and (min-width: $break-large) {
+	p{ font-size: $baseEm; line-height: $baseLH;}
+	h6{ font-size: $baseEm*$ms0; line-height: $baseLH;}
+	h5{ font-size: $baseEm*$ms0; line-height: $baseLH; }
+	h4{ font-size: $baseEm*$ms1; line-height: $baseLH; }
+	h3{ font-size: $baseEm*$ms2; line-height: $baseLH/$ratioLH; }
+	h2{ font-size: $baseEm*$ms5; line-height: $baseLH/$ratioLH/$ratioLH; }
+	h1{ font-size: $baseEm*$ms6; line-height: $baseLH/$ratioLH/$ratioLH/$ratioLH; }
+}
+
+p.small{ font-size: $baseEm*$msSmall; line-height: $baseLH;}
+
+p{ font-family: $fontRegular; }
+h6{ font-family: $fontRegular; }
+h5{ font-family: $fontRegular; }
+h4{ font-family: $fontRegular; }
+h3{ font-family: $fontRegular; }
+h2{ font-family: $fontLight; }
+h1{ font-family: $fontLight; }

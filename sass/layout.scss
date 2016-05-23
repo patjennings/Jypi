@@ -1,0 +1,34 @@
+@import 'variables';
+
+html, body{
+	font-family: $fontRegular;
+	color: $colorTextDark;
+}
+
+.container{
+	margin: 0 auto;
+	
+	.container-inner{
+		padding: $vRhythm;
+	}
+}
+
+@media screen and (min-width: $break-small) {
+	
+	.container{
+		width: 100%;
+	}
+}
+@media screen and (min-width: $break-medium) {
+	
+	.container{
+		width: 600px;
+	}
+}
+ 
+@media screen and (min-width: $break-large) {
+	
+	.container{
+		width: 600px;
+	}
+}
