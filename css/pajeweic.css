@@ -5,26 +5,30 @@
   font-weight: normal;
   font-style: normal; }
 
-[class^="ico-"]:before,
-[class*=" ico-"]:before {
-    display: inline-block;
-    font: normal normal normal 14px/1 "fontIcon";
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
+[class^="i-"]:before,
+[class*=" i-"]:before {
+   display: inline-block;
+   font: normal normal normal 14px/1 "fontIcon";
+   font-size: inherit;
+   text-rendering: auto;
+   -webkit-font-smoothing: antialiased;
 }
-
-.ico-small {
-  font-size: 1rem; }
-
-.ico-medium {
-  font-size: 1.5rem; }
-
-.ico-large {
-  font-size: 2rem; }
-
-.ico-big {
-  font-size: 3rem; }
+​
+.ico-small:before {
+ font-size: 1rem; 
+}
+​
+.ico-medium:before {
+ font-size: 1.5rem; 
+}
+​
+.ico-large:before {
+ font-size: 2rem; 
+}
+​
+.ico-big:before {
+ font-size: 3rem; 
+}
 
 .i-name:before {
   content: "\F000"; }
