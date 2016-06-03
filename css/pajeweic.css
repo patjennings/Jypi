@@ -1,3 +1,5 @@
+// Pajeweic is for PAt JEnnings WEbfont ICon
+
 @font-face {
   font-family: 'fontIcon';
   src: url("../fonts/Pajeweic-Regular.eot");
@@ -15,19 +17,19 @@
 }
 ​
 .ico-small:before {
- font-size: 1rem; 
+ font-size: 1rem;
 }
 ​
 .ico-medium:before {
- font-size: 1.5rem; 
+ font-size: 1.5rem;
 }
 ​
 .ico-large:before {
- font-size: 2rem; 
+ font-size: 2rem;
 }
 ​
 .ico-big:before {
- font-size: 3rem; 
+ font-size: 3rem;
 }
 
 .i-name:before {
