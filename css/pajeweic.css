@@ -7,26 +7,24 @@
   font-weight: normal;
   font-style: normal; }
 
-[class^="i-"]:before,
-[class*=" i-"]:before {
-   display: inline-block;
-   font: normal normal normal 14px/1 "fontIcon";
-   font-size: inherit;
-   text-rendering: auto;
-   -webkit-font-smoothing: antialiased;
-}
-​
-.ico-small:before {
- font-size: 1rem;
-}
-​
-.ico-medium:before {
- font-size: 1.5rem;
-}
-​
-.ico-large:before {
- font-size: 2rem;
-}
+  .ico {
+    display: inline-block;
+    font: normal normal normal 14px/1 'fontIcon';
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+  }
+
+  .ico-small{
+  	font-size: 1rem;
+  }
+  .ico-medium{
+  	font-size: 1.5rem;
+  }
+  .ico-large{
+  	font-size: 2rem;
+  }
 ​
 .ico-big:before {
  font-size: 3rem;
@@ -656,7 +654,7 @@
 .i-plus:before {
   content: "\F0CF"; }
 
-.i-minus-:before {
+.i-minus:before {
   content: "\F0D0"; }
 
 .i-name:before {
@@ -1567,5 +1565,3 @@
 
 .i-name:before {
   content: "\F1FF"; }
-
-/*# sourceMappingURL=icons.css.map */
