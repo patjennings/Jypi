@@ -3,19 +3,19 @@
 a{
 	font-family: $fontRegular;
 	color: $colorTextBlue;
-	
+
 	font-size: $baseEm/$ms0;
-	
+
 	-webkit-transition: all $transitionSpeed ease-out;
 	-moz-transition: all $transitionSpeed ease-out;
 	-o-transition: all $transitionSpeed ease-out;
 	transition: all $transitionSpeed ease-out;
-	
+
 	&:hover{
 		color: $colorTextBlue;
 		opacity: 0.5;
 	}
-	
+
 	&:active{}
 	&:focus{}
 }
@@ -30,12 +30,12 @@ a{
 	text-decoration: none;
 	color: $colorTextDark;
 	font-size: $baseEm/$ms0;
-	
+
 	-webkit-transition: color $transitionSpeed ease-out, background-color $transitionSpeed ease-out;
 	-moz-transition: color $transitionSpeed ease-out, background-color $transitionSpeed ease-out;
 	-o-transition: color $transitionSpeed ease-out, background-color $transitionSpeed ease-out;
 	transition: color $transitionSpeed ease-out, background-color $transitionSpeed ease-out;
-	
+
 	&:hover, &:focus{
 		color: $colorTextDark;
 		background: $colorTransparentGrey;
@@ -44,7 +44,7 @@ a{
 	&:active{
 		color: $colorTextDark;
 		background: $colorLightGrey;
-		
+
 	}
 }
 
@@ -52,7 +52,7 @@ a{
 	color: $colorWhite;
 	background: $colorGreen;
 	border: 0;
-	
+
 	&:hover, &:focus{
 		color: $colorWhite;
 		background: $colorGreenLight;
@@ -68,7 +68,7 @@ a{
 	color: $colorWhite;
 	background: $colorRed;
 	border: 0;
-	
+
 	&:hover, &:focus{
 		color: $colorWhite;
 		background: $colorRedLight;
@@ -83,7 +83,7 @@ a{
 .big{
 	padding: $vRhythm/1.3333 $vRhythm;
 	display: flex;
-	
+
 	i{
 		padding: 0 $vRhythm/2 0 0;
 	}
@@ -99,14 +99,14 @@ a{
 	color: $colorTextGrey;
 	//display: flex;
 	//align-items: baseline;
-	
+
 	&:hover, &:focus{
 		//color: $colorWhite;
 		background: $colorLighterGrey;
 		outline: 0;
 	}
 	&:active{
-		
+
 	}
 	i{
 		margin-top: 4px;
@@ -122,12 +122,12 @@ a{
 	line-height: 1px;
 	display: flex;
 	align-items: center;
-	
+
 	i{
 		padding: 0 $vRhythm/2 0 0;
 	}
-	
-	
+
+
 	&:hover, &:focus{
 		color: $colorBlueLight;
 		background: none;
@@ -146,38 +146,38 @@ a{
 // Forms
 
 .form-wrapper{
-	
+
 	display: flex;
 	align-items: center;
 	margin-bottom: $vRhythm;
-	
+
 	label{
 		width: 20%;
 		display: block;
 		float: left;
 		text-align: right;
-		
-		padding: 0 $vRhythm/2;	
+
+		padding: 0 $vRhythm/2;
 		font-size: 0.75rem;
 		color: $colorGrey;
 	}
-	
+
 	input, textarea, select{
 		width: 70%;
 		display: block;
 		padding: $vRhythm/2;
 		background: $colorWhite;
-		
+
 		font-size: $baseEm/$ms0;
-		
+
 		border: 1px solid $colorLighterGrey;
 		border-radius: 3px;
-		
+
 		-webkit-transition: border-color $transitionSpeed ease-out;
 		-moz-transition: border-color $transitionSpeed ease-out;
 		-o-transition: border-color $transitionSpeed ease-out;
 		transition: border-color $transitionSpeed ease-out;
-		
+
 		&:hover{
 			border-color: $colorLightGrey;
 		}
@@ -187,15 +187,15 @@ a{
 			outline: none;
 		}
 	}
-	
+
 	select{
 		background: transparent;
 		-webkit-appearance: none;
-		
+
 		background: url(../assets/caret-down.svg) no-repeat 97% center;
 	}
-	
-	
+
+
 }
 
 // Forms
