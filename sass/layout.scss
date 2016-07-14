@@ -1,12 +1,12 @@
 @import 'variables';
 
 html, body{
-	font-family: $fontRegular;
+	font-family: $Lato;
 	color: $colorTextDark;
 }
 
 .container{
-	margin: 0 auto;
+	margin: $baseEm*2 auto;
 
 	.container-inner{
 		padding: $vRhythm;
@@ -30,5 +30,13 @@ html, body{
 
 	.container{
 		width: 600px;
+	}
+}
+@media print {
+	body{
+
+	}
+	.container{
+
 	}
 }

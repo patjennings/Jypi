@@ -1,7 +1,7 @@
 @import 'variables';
 
 a{
-	font-family: $fontRegular;
+	font-family: $Lato;
 	color: $colorTextBlue;
 
 	font-size: $baseEm/$ms0;
@@ -182,7 +182,7 @@ a{
 			border-color: $colorLightGrey;
 		}
 		&:focus{
-			border-color: $colorRestletBlue;
+			border-color: $colorGreyDark;
 			border-width: 1px;
 			outline: none;
 		}
@@ -204,7 +204,3 @@ a{
 
 
 // Misc
-
-hr{
-	margin: $vRhythm 0;
-}

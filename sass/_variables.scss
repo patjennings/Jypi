@@ -1,10 +1,19 @@
-@font-face {font-family: 'Open Sans', sans-serif;}
+@font-face {font-family: 'LatoBlack'; src: url("../fonts/Lato-Black.ttf"); }
+@font-face {font-family: 'LatoBlackIt'; src: url("../fonts/Lato-BlackItalic.ttf"); }
+@font-face {font-family: 'LatoBold'; src: url("../fonts/Lato-Bold.ttf"); }
+@font-face {font-family: 'LatoBoldIt'; src: url("../fonts/Lato-BoldItalic.ttf"); }
+@font-face {font-family: 'LatoHairline'; src: url("../fonts/Lato-Hairline.ttf"); }
+@font-face {font-family: 'LatoHairlineIt'; src: url("../fonts/Lato-HairlineItalic.ttf"); }
+@font-face {font-family: 'LatoLight'; src: url("../fonts/Lato-Light.ttf"); }
+@font-face {font-family: 'LatoLightIt'; src: url("../fonts/Lato-LightItalic.ttf"); }
+@font-face {font-family: 'LatoIt'; src: url("../fonts/Lato-Italic.ttf"); }
+@font-face {font-family: 'Lato'; src: url("../fonts/Lato-Regular.ttf"); }
 
 //$font-size: 16; // Your base font-size in pixels
 //$em: $font-size*1em; // Shorthand for outputting ems, e.g. "12/$em"
 
-$column: 60; // The column-width of your grid in pixels
-$gutter: 20; // The gutter-width of your grid in pixels
+$column: 64; // The column-width of your grid in pixels
+$gutter: 16; // The gutter-width of your grid in pixels
 
 $break-small: 320px;
 $break-medium: 768px;
@@ -14,15 +23,6 @@ $transitionSpeed: 0.18s;
 $transitionType: ease-out;
 
 $vRhythm: 1rem;
-
-//-- colors:start --//
-$colorRestletBlue: #55a7d9;
-$colorRestletDarkAnthracite: #284249;
-$colorRestletMediumAnthracite: #485b73;
-$colorRestletLightAnthracite: #5a788b;
-$colorRestletGreen: #89b76c;
-$colorRestletOrange: #f5821f;
-$colorRestletYellow: #f6b11a;
 
 $colorGreenLow: #74a467;
 $colorGreen: #8fc581;
@@ -53,10 +53,16 @@ $colorWhite: #FFFFFF;
 //-- colors:end --//
 
 //-- typo:start --//
-$fontLight: "Open Sans", Helvetica, sans-serif; // 300, 700
-$fontRegular: "Open Sans", Helvetica, sans-serif; // 300, 700
-$fontMedium: "Open Sans", Helvetica, sans-serif; // 300, 700
-$fontBold: "Open Sans", Helvetica, sans-serif; // 300, 700
+$LatoIt: "LatoIt", Helvetica, sans-serif;
+$Lato: "Lato", Helvetica, sans-serif;
+$LatoHairlineIt: "LatoHairlineIt", Helvetica, sans-serif;
+$LatoHairline: "LatoHairline", Helvetica, sans-serif;
+$LatoLightIt: "LatoLightIt", Helvetica, sans-serif;
+$LatoLight: "LatoLight", Helvetica, sans-serif;
+$LatoBoldIt: "LatoBoldIt", Helvetica, sans-serif;
+$LatoBold: "LatoBold", Helvetica, sans-serif;
+$LatoBlackIt: "LatoBlackIt", Helvetica, sans-serif;
+$LatoBlack: "LatoBlack", Helvetica, sans-serif;
 //-- typo:end --//
 
 
@@ -67,8 +73,10 @@ $fontBold: "Open Sans", Helvetica, sans-serif; // 300, 700
 // Modular Scale :
 // http://www.modularscale.com/?1&em&1.125&sass&text
 
-$baseEm: 0.875em;
+$baseEm: 1em;
 $baseLH: 1.5em;
+
+$basePt: 9pt;
 
 $ratio: 1.125;
 $ratioLH: 1.067;
@@ -84,4 +92,3 @@ $ms6: $ratio*$ms5;
 $ms7: $ratio*$ms6;
 $ms8: $ratio*$ms7;
 $ms9: $ratio*$ms8;
-
