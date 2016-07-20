@@ -48,15 +48,15 @@
 
   h3 {
     font-size: 1em;
-    line-height: 1.40581em; }
+    line-height: 1.5em; }
 
   h2 {
-    font-size: 1.42383em;
-    line-height: 1.31754em; }
+    font-size: 1.5em;
+    line-height: 1.33333em; }
 
   h1 {
-    font-size: 1.80203em;
-    line-height: 1.2348em; } }
+    font-size: 2.25em;
+    line-height: 1.33333em; } }
 @media screen and (min-width: 768px) {
   p {
     font-size: 1em;
@@ -76,15 +76,15 @@
 
   h3 {
     font-size: 1em;
-    line-height: 1.40581em; }
+    line-height: 1.5em; }
 
   h2 {
-    font-size: 1.42383em;
-    line-height: 1.31754em; }
+    font-size: 1.5em;
+    line-height: 1.33333em; }
 
   h1 {
-    font-size: 1.80203em;
-    line-height: 1.2348em; } }
+    font-size: 2.25em;
+    line-height: 1.33333em; } }
 @media screen and (min-width: 1024px) {
   p {
     font-size: 1em;
@@ -108,57 +108,11 @@
 
   h2 {
     font-size: 1.5em;
-    line-height: 1.33em; }
+    line-height: 1.33333em; }
 
   h1 {
     font-size: 2.25em;
-    line-height: 1.2em; } }
-@media print {
-  p {
-    font-size: 9pt;
-    line-height: 13.5pt;
-    margin-bottom: 13.5pt; }
-
-  h6 {
-    font-size: 9pt;
-    line-height: 13.5pt;
-    margin-bottom: 0; }
-
-  h5 {
-    font-size: 9pt;
-    line-height: 13.5pt;
-    margin-bottom: 0; }
-
-  h4 {
-    font-size: 9pt;
-    line-height: 13.5pt;
-    margin-bottom: 0; }
-
-  h3 {
-    font-size: 9pt;
-    line-height: 13.5pt;
-    margin-bottom: 9pt;
-    padding-top: 4.5pt; }
-
-  h2 {
-    font-size: 13.5pt;
-    line-height: 11.97pt;
-    margin-bottom: 9pt;
-    padding-top: 4.5pt; }
-
-  h1 {
-    font-size: 20.25pt;
-    line-height: 10.8pt;
-    margin-bottom: 6.00003pt; }
-
-  ul li {
-    font-size: 9pt;
-    line-height: 1.5em; }
-
-  @page {
-    margin: 36pt 81pt 63pt 81pt; }
-  body {
-    margin: 1.6cm; } }
+    line-height: 1.33333em; } }
 p.small {
   font-size: 0.75em;
   line-height: 1.66667em; }
@@ -194,7 +148,7 @@ h3 {
 h2 {
   font-family: "Lato", Helvetica, sans-serif;
   margin-bottom: 1em;
-  padding-top: 0.5em; }
+  padding-top: 0.66667em; }
 
 h1 {
   font-family: "LatoLight", Helvetica, sans-serif;
@@ -207,10 +161,23 @@ ul, ol {
   ul li, ol li {
     line-height: 1.5em; }
 
+.footnotes ul, .footnotes ol {
+  margin-top: 0;
+  margin-bottom: 1.5em;
+  padding-left: 0;
+  page-break-inside: avoid;
+  /* pas de coupure dans ces élements */ }
+  .footnotes ul li, .footnotes ol li {
+    font-size: 0.83333em;
+    line-height: 1.5em; }
+    .footnotes ul li p, .footnotes ol li p {
+      line-height: 1.8em;
+      margin-bottom: 0.6em; }
+
 hr {
   width: 100%;
   margin-top: 2em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
   border: 0; }
 
 hr::after {
@@ -228,11 +195,16 @@ blockquote {
     font-family: "LatoIt", Helvetica, sans-serif; }
 
 pre {
-  line-height: 1.5em; }
+  padding: 1em 1.33333em;
+  background-color: rgba(0, 0, 0, 0.03); }
+  pre code {
+    font-size: 1em;
+    line-height: 1.5em; }
 
 table {
   margin-top: 1em;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  line-height: 1.5em; }
   table thead tr th {
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     vertical-align: top;
@@ -243,5 +215,181 @@ table {
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     vertical-align: top;
     padding: 1em 2em 1em 0; }
+
+img {
+  margin-bottom: 0.5em; }
+
+.figure p {
+  font-size: 0.83333em;
+  line-height: 1.8em;
+  margin-bottom: 2.4em; }
+
+@media print {
+  body {
+    background-color: #fff !important; }
+
+  p {
+    font-size: 10.5pt;
+    line-height: 15.75pt;
+    margin-bottom: 15.75pt;
+    margin-bottom: 0;
+    text-indent: 10.5pt;
+    orphans: 3;
+    /* pas de ligne seule en bas */
+    widows: 3;
+    /* pas de ligne seule en haut */ }
+
+  h6 {
+    font-size: 10.5pt;
+    line-height: 15.75pt;
+    margin-top: 15.75pt;
+    margin-bottom: 0;
+    page-break-after: avoid;
+    /* pas de saut après ces éléments */ }
+
+  h5 {
+    font-size: 10.5pt;
+    line-height: 15.75pt;
+    margin-top: 15.75pt;
+    margin-bottom: 0;
+    page-break-after: avoid;
+    /* pas de saut après ces éléments */ }
+
+  h4 {
+    font-size: 10.5pt;
+    line-height: 15.75pt;
+    margin-top: 15.75pt;
+    margin-bottom: 0;
+    page-break-after: avoid;
+    /* pas de saut après ces éléments */ }
+
+  h3 {
+    font-size: 10.5pt;
+    line-height: 15.75pt;
+    margin-top: 15.75pt;
+    margin-bottom: 10.5pt;
+    padding-top: 5.25pt;
+    page-break-after: avoid;
+    /* pas de saut après ces éléments */ }
+
+  h2 {
+    font-size: 15.75pt;
+    line-height: 21pt;
+    margin-top: 15.75pt;
+    margin-bottom: 10.5pt;
+    padding-top: 5.25pt;
+    page-break-after: avoid;
+    /* pas de saut après ces éléments */ }
+
+  h1 {
+    font-size: 23.625pt;
+    line-height: 31.5pt;
+    margin-top: 15.75pt;
+    margin-bottom: 15.75pt;
+    page-break-after: avoid;
+    /* pas de saut après ces éléments */ }
+
+  ul, ol {
+    margin-top: 0;
+    margin-bottom: 15.75pt;
+    padding-left: 0;
+    page-break-inside: avoid;
+    /* pas de coupure dans ces élements */ }
+    ul li, ol li {
+      font-size: 10.5pt;
+      line-height: 15.75pt; }
+
+  .footnotes ul, .footnotes ol {
+    margin-top: 0;
+    margin-bottom: 15.75pt;
+    padding-left: 0;
+    page-break-inside: avoid;
+    /* pas de coupure dans ces élements */ }
+    .footnotes ul li, .footnotes ol li {
+      font-size: 9.54545pt;
+      line-height: 15.75pt; }
+      .footnotes ul li p, .footnotes ol li p {
+        font-size: 9.54545pt;
+        line-height: 15.75pt;
+        margin-bottom: 7.875pt; }
+
+  a {
+    color: #242424;
+    text-decoration: underline !important; }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+    /* affichage des URL des liens */ }
+
+  a[href].footnoteRef:after {
+    content: "";
+    /* affichage des URL des liens */ }
+
+  .footnotes a {
+    display: none; }
+
+  hr {
+    width: 100%;
+    margin-top: 21pt;
+    margin-bottom: 21pt;
+    border: 0;
+    font-size: 7.875pt; }
+
+  hr::after {
+    display: inline-block;
+    content: '•••';
+    opacity: 0.5;
+    width: 100%;
+    letter-spacing: 1em;
+    text-align: center; }
+
+  blockquote {
+    line-height: 15.75pt;
+    margin: 10.5pt;
+    border: 0; }
+    blockquote p {
+      font-family: "LatoIt", Helvetica, sans-serif; }
+
+  pre {
+    padding: 10.5pt 14pt;
+    border: 0;
+    page-break-inside: avoid;
+    /* pas de coupure dans ces élements */ }
+    pre code {
+      font-size: 10.5pt;
+      line-height: 15.75pt;
+      display: inline-block;
+      white-space: pre; }
+
+  table {
+    margin-top: 10.5pt;
+    margin-bottom: 21pt;
+    font-size: 10.5pt;
+    page-break-inside: avoid;
+    /* pas de coupure dans ces élements */ }
+    table thead tr th {
+      border-top: 1px solid rgba(0, 0, 0, 0.3);
+      vertical-align: top;
+      padding: 7pt 21pt 7pt 0;
+      font-family: "LatoBold", Helvetica, sans-serif;
+      font-weight: normal; }
+    table tbody tr td {
+      border-top: 1px solid rgba(0, 0, 0, 0.05);
+      vertical-align: top;
+      padding: 7pt 21pt 7pt 0; }
+
+  img {
+    margin-bottom: 5.25pt; }
+
+  .figure p {
+    font-size: 8.75pt;
+    line-height: 18.9pt;
+    margin-bottom: 25.2pt;
+    text-indent: 0; }
+
+  @page {
+    margin: 63pt 94.5pt 73.5pt 94.5pt; }
+  body {
+    margin: 1.6cm; } }
 
 /*# sourceMappingURL=typography.css.map */

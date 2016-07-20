@@ -1,1 +1,1 @@
-sass --watch sass:css
+sass --watch --trace sass:css
