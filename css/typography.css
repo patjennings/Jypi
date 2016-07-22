@@ -31,91 +31,91 @@
   src: url("../fonts/Lato-Regular.ttf"); }
 @media screen and (min-width: 320px) {
   p {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
   h6 {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
   h5 {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
   h4 {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
   h3 {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
   h2 {
-    font-size: 1.5em;
-    line-height: 1.33333em; }
+    font-size: 1.5rem;
+    line-height: 1.5rem; }
 
   h1 {
-    font-size: 2.25em;
-    line-height: 1.33333em; } }
+    font-size: 2.25rem;
+    line-height: 2.5rem; } }
 @media screen and (min-width: 768px) {
   p {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
   h6 {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
   h5 {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
   h4 {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
   h3 {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
   h2 {
-    font-size: 1.5em;
-    line-height: 1.33333em; }
+    font-size: 1.5rem;
+    line-height: 1.5rem; }
 
   h1 {
-    font-size: 2.25em;
-    line-height: 1.33333em; } }
+    font-size: 2.25rem;
+    line-height: 2.5rem; } }
 @media screen and (min-width: 1024px) {
   p {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
   h6 {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
   h5 {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
   h4 {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
   h3 {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
   h2 {
-    font-size: 1.5em;
-    line-height: 1.33333em; }
+    font-size: 1.5rem;
+    line-height: 1.5rem; }
 
   h1 {
-    font-size: 2.25em;
-    line-height: 1.33333em; } }
+    font-size: 2.25rem;
+    line-height: 2.5rem; } }
 p.small {
-  font-size: 0.75em;
-  line-height: 1.66667em; }
+  font-size: 0.75rem;
+  line-height: 1.5rem; }
 
 p, h6, h5, h4, h3, h2, h1 {
   margin-top: 0;
@@ -123,7 +123,7 @@ p, h6, h5, h4, h3, h2, h1 {
 
 p {
   font-family: "Lato", Helvetica, sans-serif;
-  margin-bottom: 1.5em; }
+  margin-bottom: 1.5rem; }
 
 h6 {
   font-family: "LatoBoldIt", Helvetica, sans-serif;
@@ -142,42 +142,43 @@ h3 {
   font-family: "LatoBlack", Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.2px;
-  margin-bottom: 1em;
-  padding-top: 0.5em; }
+  margin-bottom: 1rem;
+  padding-top: 0.5rem; }
 
 h2 {
   font-family: "Lato", Helvetica, sans-serif;
-  margin-bottom: 1em;
-  padding-top: 0.66667em; }
+  margin-bottom: 1rem;
+  padding-top: 0.66667rem; }
 
 h1 {
   font-family: "LatoLight", Helvetica, sans-serif;
-  margin-bottom: 0.66667em; }
+  margin-bottom: 0.66667rem; }
 
 ul, ol {
   margin-top: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   padding-left: 0; }
   ul li, ol li {
-    line-height: 1.5em; }
+    line-height: 1.5rem; }
 
 .footnotes ul, .footnotes ol {
   margin-top: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 1.5rem;
   padding-left: 0;
   page-break-inside: avoid;
   /* pas de coupure dans ces élements */ }
   .footnotes ul li, .footnotes ol li {
-    font-size: 0.83333em;
-    line-height: 1.5em; }
+    font-size: 0.83333rem;
+    line-height: 1.5rem; }
     .footnotes ul li p, .footnotes ol li p {
-      line-height: 1.8em;
-      margin-bottom: 0.6em; }
+      font-size: 0.83333rem;
+      line-height: 1.5rem;
+      margin-bottom: 0.6rem; }
 
 hr {
   width: 100%;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   border: 0; }
 
 hr::after {
@@ -189,40 +190,41 @@ hr::after {
   text-align: center; }
 
 blockquote {
-  line-height: 1.5em;
-  margin: 1em; }
+  line-height: 1.5rem;
+  margin: 1rem; }
   blockquote p {
     font-family: "LatoIt", Helvetica, sans-serif; }
 
 pre {
-  padding: 1em 1.33333em;
+  padding: 1rem 1.33333rem;
   background-color: rgba(0, 0, 0, 0.03); }
   pre code {
-    font-size: 1em;
-    line-height: 1.5em; }
+    font-size: 1rem;
+    line-height: 1.5rem; }
 
 table {
-  margin-top: 1em;
-  margin-bottom: 2em;
-  line-height: 1.5em; }
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+  border-collapse: collapse; }
   table thead tr th {
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     vertical-align: top;
-    padding: 1em 2em 1em 0;
+    padding: 1rem 2rem 1rem 0;
     font-family: "LatoBold", Helvetica, sans-serif;
     font-weight: normal; }
   table tbody tr td {
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     vertical-align: top;
-    padding: 1em 2em 1em 0; }
+    padding: 1rem 2rem 1rem 0; }
 
 img {
-  margin-bottom: 0.5em; }
+  margin-bottom: 0.5rem; }
 
 .figure p {
-  font-size: 0.83333em;
-  line-height: 1.8em;
-  margin-bottom: 2.4em; }
+  font-size: 0.83333rem;
+  line-height: 1.5rem;
+  margin-bottom: 2.4rem; }
 
 @media print {
   body {

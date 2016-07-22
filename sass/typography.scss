@@ -6,8 +6,8 @@
 	h5{ font-size: $baseEm; line-height: $baseEm*1.5; }
 	h4{ font-size: $baseEm; line-height: $baseEm*1.5; }
 	h3{ font-size: $baseEm; line-height: $baseEm*1.5; }
-	h2{ font-size: $baseEm*1.5; line-height: $baseEm*1.33333; }
-	h1{ font-size: $baseEm*2.25; line-height: $baseEm*1.33333; }
+	h2{ font-size: $baseEm*1.5; line-height: $baseEm*1.5; }
+	h1{ font-size: $baseEm*2.25; line-height: $baseEm*2.5; }
 }
 @media screen and (min-width: $break-medium) {
 	p{ font-size: $baseEm; line-height: $baseEm*1.5;}
@@ -15,8 +15,8 @@
 	h5{ font-size: $baseEm; line-height: $baseEm*1.5; }
 	h4{ font-size: $baseEm; line-height: $baseEm*1.5; }
 	h3{ font-size: $baseEm; line-height: $baseEm*1.5; }
-	h2{ font-size: $baseEm*1.5; line-height: $baseEm*1.33333; }
-	h1{ font-size: $baseEm*2.25; line-height: $baseEm*1.33333; }
+	h2{ font-size: $baseEm*1.5; line-height: $baseEm*1.5; }
+	h1{ font-size: $baseEm*2.25; line-height: $baseEm*2.5; }
 }
 
 @media screen and (min-width: $break-large) {
@@ -25,11 +25,11 @@
 	h5{ font-size: $baseEm; line-height: $baseEm*1.5; }
 	h4{ font-size: $baseEm; line-height: $baseEm*1.5; }
 	h3{ font-size: $baseEm; line-height: $baseEm*1.5; }
-	h2{ font-size: $baseEm*1.5; line-height: $baseEm*1.33333; }
-	h1{ font-size: $baseEm*2.25; line-height: $baseEm*1.33333; }
+	h2{ font-size: $baseEm*1.5; line-height: $baseEm*1.5; }
+	h1{ font-size: $baseEm*2.25; line-height: $baseEm*2.5; }
 }
 
-p.small{ font-size: $baseEm*0.75; line-height: $baseEm*1.66667;}
+p.small{ font-size: $baseEm*0.75; line-height: $baseEm*1.5;}
 
 p, h6, h5, h4, h3, h2, h1{
 	margin-top: 0;
@@ -92,7 +92,8 @@ ul, ol{
 			line-height: $baseEm*1.5;
 
 			p{
-				line-height: $baseEm*1.8;
+				font-size: $baseEm/1.2;
+				line-height: $baseEm*1.5;
 				margin-bottom: $baseEm/1.666667;
 			}
 		}
@@ -138,6 +139,8 @@ table{
 	margin-top: $baseEm;
 	margin-bottom: $baseEm*2;
 	line-height: $baseEm*1.5;
+  border-collapse: collapse;
+
 	thead{
 		// border-top: 1px solid #000;
 
@@ -167,7 +170,7 @@ img{
 .figure{
 	p{
 		font-size: $baseEm/1.2;
-		line-height: $baseEm*1.8;
+		line-height: $baseEm*1.5;
 		margin-bottom: $baseEm*2.4;
 	}
 }
