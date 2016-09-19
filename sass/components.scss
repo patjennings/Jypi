@@ -4,7 +4,7 @@ a{
 	font-family: $Lato;
 	color: $colorTextBlue;
 
-	font-size: $baseEm/$ms0;
+	font-size: $baseRem/$ms0;
 
 	-webkit-transition: all $transitionSpeed ease-out;
 	-moz-transition: all $transitionSpeed ease-out;
@@ -29,7 +29,7 @@ a{
 	border-radius: 3px;
 	text-decoration: none;
 	color: $colorTextDark;
-	font-size: $baseEm/$ms0;
+	font-size: $baseRem/$ms0;
 
 	-webkit-transition: color $transitionSpeed ease-out, background-color $transitionSpeed ease-out;
 	-moz-transition: color $transitionSpeed ease-out, background-color $transitionSpeed ease-out;
@@ -118,7 +118,7 @@ a{
 	border: none;
 	background: none;
 	color: $colorBlue;
-	font-size: $baseEm*$msSmall;
+	font-size: $baseRem*$msSmall;
 	line-height: 1px;
 	display: flex;
 	align-items: center;
@@ -168,7 +168,7 @@ a{
 		padding: $vRhythm/2;
 		background: $colorWhite;
 
-		font-size: $baseEm/$ms0;
+		font-size: $baseRem/$ms0;
 
 		border: 1px solid $colorLighterGrey;
 		border-radius: 3px;

@@ -3,11 +3,11 @@
 html, body{
 	font-family: $Lato;
 	color: $colorTextDark;
-	//background-image: url(../assets/rhythm.png);
+	// background-image: url(../assets/rhythm.png);
 }
 
 .container{
-	margin: $baseEm*2 auto;
+	margin: $baseRem*2 auto;
 
 	.container-inner{
 		padding: $vRhythm;

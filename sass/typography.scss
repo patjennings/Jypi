@@ -1,35 +1,35 @@
 @import 'variables';
 
 @media screen and (min-width: $break-small) {
-	p{ font-size: $baseEm; line-height: $baseEm*1.5;}
-	h6{ font-size: $baseEm; line-height: $baseEm*1.5;}
-	h5{ font-size: $baseEm; line-height: $baseEm*1.5; }
-	h4{ font-size: $baseEm; line-height: $baseEm*1.5; }
-	h3{ font-size: $baseEm; line-height: $baseEm*1.5; }
-	h2{ font-size: $baseEm*1.5; line-height: $baseEm*1.5; }
-	h1{ font-size: $baseEm*2.25; line-height: $baseEm*2.5; }
+	p{ font-size: $baseRem; line-height: $baseRem*1.5;}
+	h6{ font-size: $baseRem; line-height: $baseRem*1.5;}
+	h5{ font-size: $baseRem; line-height: $baseRem*1.5; }
+	h4{ font-size: $baseRem; line-height: $baseRem*1.5; }
+	h3{ font-size: $baseRem; line-height: $baseRem*1.5; }
+	h2{ font-size: $baseRem*1.5; line-height: $baseRem*1.5*1.33333; }
+	h1{ font-size: $baseRem*2.25; line-height: $baseRem*2.5; }
 }
 @media screen and (min-width: $break-medium) {
-	p{ font-size: $baseEm; line-height: $baseEm*1.5;}
-	h6{ font-size: $baseEm; line-height: $baseEm*1.5;}
-	h5{ font-size: $baseEm; line-height: $baseEm*1.5; }
-	h4{ font-size: $baseEm; line-height: $baseEm*1.5; }
-	h3{ font-size: $baseEm; line-height: $baseEm*1.5; }
-	h2{ font-size: $baseEm*1.5; line-height: $baseEm*1.5; }
-	h1{ font-size: $baseEm*2.25; line-height: $baseEm*2.5; }
+	p{ font-size: $baseRem; line-height: $baseRem*1.5;}
+	h6{ font-size: $baseRem; line-height: $baseRem*1.5;}
+	h5{ font-size: $baseRem; line-height: $baseRem*1.5; }
+	h4{ font-size: $baseRem; line-height: $baseRem*1.5; }
+	h3{ font-size: $baseRem; line-height: $baseRem*1.5; }
+	h2{ font-size: $baseRem*1.5; line-height: $baseRem*1.5*1.33333; }
+	h1{ font-size: $baseRem*2.25; line-height: $baseRem*2.5; }
 }
 
 @media screen and (min-width: $break-large) {
-	p{ font-size: $baseEm; line-height: $baseEm*1.5;}
-	h6{ font-size: $baseEm; line-height: $baseEm*1.5;}
-	h5{ font-size: $baseEm; line-height: $baseEm*1.5; }
-	h4{ font-size: $baseEm; line-height: $baseEm*1.5; }
-	h3{ font-size: $baseEm; line-height: $baseEm*1.5; }
-	h2{ font-size: $baseEm*1.5; line-height: $baseEm*1.5; }
-	h1{ font-size: $baseEm*2.25; line-height: $baseEm*2.5; }
+	p{ font-size: $baseRem; line-height: $baseRem*1.5;}
+	h6{ font-size: $baseRem; line-height: $baseRem*1.5;}
+	h5{ font-size: $baseRem; line-height: $baseRem*1.5; }
+	h4{ font-size: $baseRem; line-height: $baseRem*1.5; }
+	h3{ font-size: $baseRem; line-height: $baseRem*1.5; }
+	h2{ font-size: $baseRem*1.5; line-height: $baseRem*1.5*1.33333; }
+	h1{ font-size: $baseRem*2.25; line-height: $baseRem*2.75; }
 }
 
-p.small{ font-size: $baseEm*0.75; line-height: $baseEm*1.5;}
+p.small{ font-size: $baseRem*0.75; line-height: $baseRem*1.5;}
 
 p, h6, h5, h4, h3, h2, h1{
 	margin-top: 0;
@@ -38,7 +38,7 @@ p, h6, h5, h4, h3, h2, h1{
 
 p{
 	font-family: $Lato;
-	margin-bottom: $baseEm*1.5;
+	margin-bottom: $baseRem*1.5;
 }
 h6{
 	font-family: $LatoBoldIt;
@@ -57,44 +57,44 @@ h3{
 	font-family: $LatoBlack;
 	text-transform: uppercase;
 	letter-spacing: 1.2px;
-	margin-bottom: $baseEm;
-	padding-top: $baseEm/2;
+	margin-bottom: $baseRem;
+	padding-top: $baseRem/2;
 }
 h2{
 	font-family: $Lato;
-	margin-bottom: $baseEm;
-	padding-top: $baseEm/1.5;
+	margin-bottom: $baseRem;
+	padding-top: $baseRem/1.5;
 }
 h1{
 	font-family: $LatoLight;
-	margin-bottom: $baseEm*0.666667;
+	margin-bottom: $baseRem*0.666667;
 }
 
 ul, ol{
 	margin-top: 0;
-	margin-bottom: $baseEm*1.5;
+	margin-bottom: $baseRem*1.5;
 	padding-left: 0;
 
 	li{
-		line-height: $baseEm*1.5;
+		line-height: $baseRem*1.5;
 	}
 }
 
 .footnotes{
 	ul, ol{
 		margin-top: 0;
-		margin-bottom: $baseEm*1.5;
+		margin-bottom: $baseRem*1.5;
 		padding-left: 0;
 		page-break-inside: avoid; /* pas de coupure dans ces élements */
 
 		li{
-			font-size: $baseEm/1.2;
-			line-height: $baseEm*1.5;
+			font-size: $baseRem/1.2;
+			line-height: $baseRem*1.5;
 
 			p{
-				font-size: $baseEm/1.2;
-				line-height: $baseEm*1.5;
-				margin-bottom: $baseEm/1.666667;
+				font-size: $baseRem/1.2;
+				line-height: $baseRem*1.5;
+				margin-bottom: $baseRem/1.666667;
 			}
 		}
 	}
@@ -102,8 +102,8 @@ ul, ol{
 
 hr{
 	width: 100%;
-	margin-top: $baseEm*2;
-	margin-bottom: $baseEm*2;
+	margin-top: $baseRem*2;
+	margin-bottom: $baseRem*2;
 	border: 0;
 	//color: inherit;
 }
@@ -117,8 +117,8 @@ hr::after{
 }
 
 blockquote{
-	line-height: $baseEm*1.5;
-	margin: $baseEm;
+	line-height: $baseRem*1.5;
+	margin: $baseRem;
 
 	p{
 		font-family: $LatoIt;
@@ -127,18 +127,18 @@ blockquote{
 
 pre{
 
-	padding: $baseEm $baseEm*1.333333;
+	padding: $baseRem $baseRem*1.333333;
 	background-color: rgba(0,0,0,0.03);
 
 	code{
-		font-size: $baseEm;
-		line-height: $baseEm*1.5;
+		font-size: $baseRem;
+		line-height: $baseRem*1.5;
 	}
 }
 table{
-	margin-top: $baseEm;
-	margin-bottom: $baseEm*2;
-	line-height: $baseEm*1.5;
+	margin-top: $baseRem;
+	margin-bottom: $baseRem*2;
+	line-height: $baseRem*1.5;
   border-collapse: collapse;
 
 	thead{
@@ -148,7 +148,7 @@ table{
 			th{
 				border-top: 1px solid rgba(0,0,0, 0.3);
 				vertical-align: top;
-				padding: $baseEm $baseEm*2 $baseEm 0;
+				padding: $baseRem $baseRem*2 $baseRem 0;
 				font-family: $LatoBold;
 				font-weight: normal;
 			}
@@ -159,19 +159,19 @@ table{
 			td{
 				border-top: 1px solid rgba(0,0,0, 0.05);
 				vertical-align: top;
-				padding: $baseEm $baseEm*2 $baseEm 0;
+				padding: $baseRem $baseRem*2 $baseRem 0;
 			}
 		}
 	}
 }
 img{
-	margin-bottom: $baseEm/2;
+	margin-bottom: $baseRem/2;
 }
 .figure{
 	p{
-		font-size: $baseEm/1.2;
-		line-height: $baseEm*1.5;
-		margin-bottom: $baseEm*2.4;
+		font-size: $baseRem/1.2;
+		line-height: $baseRem*1.5;
+		margin-bottom: $baseRem*2.4;
 	}
 }
 
