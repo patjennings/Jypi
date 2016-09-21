@@ -175,6 +175,10 @@ img{
 	}
 }
 
+sup{
+	line-height: 0;
+}
+
 // CSS Rules for print
 
 @media print {
@@ -360,6 +364,10 @@ img{
 			margin-bottom: $basePt*2.4;
 			text-indent: 0;
 		}
+	}
+
+	sup{
+		line-height: 0;
 	}
 
 	@page { margin: $basePt*6 $basePt*9 $basePt*7 $basePt*9; }

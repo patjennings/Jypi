@@ -226,6 +226,9 @@ img {
   line-height: 1.5rem;
   margin-bottom: 2.4rem; }
 
+sup {
+  line-height: 0; }
+
 @media print {
   body {
     background-color: #fff !important; }
@@ -388,6 +391,9 @@ img {
     line-height: 18.9pt;
     margin-bottom: 25.2pt;
     text-indent: 0; }
+
+  sup {
+    line-height: 0; }
 
   @page {
     margin: 63pt 94.5pt 73.5pt 94.5pt; }
