@@ -1,23 +1,12 @@
-@font-face {font-family: 'LatoBlack'; src: url("../fonts/Lato-Black.ttf"); }
-@font-face {font-family: 'LatoBlackIt'; src: url("../fonts/Lato-BlackItalic.ttf"); }
-@font-face {font-family: 'LatoBold'; src: url("../fonts/Lato-Bold.ttf"); }
-@font-face {font-family: 'LatoBoldIt'; src: url("../fonts/Lato-BoldItalic.ttf"); }
-@font-face {font-family: 'LatoHairline'; src: url("../fonts/Lato-Hairline.ttf"); }
-@font-face {font-family: 'LatoHairlineIt'; src: url("../fonts/Lato-HairlineItalic.ttf"); }
-@font-face {font-family: 'LatoLight'; src: url("../fonts/Lato-Light.ttf"); }
-@font-face {font-family: 'LatoLightIt'; src: url("../fonts/Lato-LightItalic.ttf"); }
-@font-face {font-family: 'LatoIt'; src: url("../fonts/Lato-Italic.ttf"); }
-@font-face {font-family: 'Lato'; src: url("../fonts/Lato-Regular.ttf"); }
-
 //$font-size: 16; // Your base font-size in pixels
 //$em: $font-size*1em; // Shorthand for outputting ems, e.g. "12/$em"
 
-$column: 64; // The column-width of your grid in pixels
-$gutter: 16; // The gutter-width of your grid in pixels
+$column: 70px; // The column-width of your grid in pixels
+$gutter: 30px; // The gutter-width of your grid in pixels
 
 $break-small: 320px;
-$break-medium: 768px;
-$break-large: 1024px;
+$break-medium: 640px;
+$break-large: 1170px;
 
 $transitionSpeed: 0.18s;
 $transitionType: ease-out;
@@ -25,7 +14,7 @@ $transitionType: ease-out;
 $vRhythm: 1rem;
 
 $colorGreenLow: #74a467;
-$colorGreen: #8fc581;
+$colorGreen: #1ACC58;
 $colorGreenLight: #b3d2a5;
 $colorRedLow: #cd444d;
 $colorRed: #D44C57;
@@ -37,7 +26,7 @@ $colorBlueLow: #518ece;
 $colorBlue: #74a5d8;
 $colorBlueLight: #9DBADE;
 
-$colorTextDark: #242424;
+$colorTextDark: #333333;
 $colorTextBlue: #485B73;
 $colorTextGrey: #777777;
 $colorTextLightGrey: #C1C1C1;
@@ -53,16 +42,8 @@ $colorWhite: #FFFFFF;
 //-- colors:end --//
 
 //-- typo:start --//
-$LatoIt: "LatoIt", Helvetica, sans-serif;
-$Lato: "Lato", Helvetica, sans-serif;
-$LatoHairlineIt: "LatoHairlineIt", Helvetica, sans-serif;
-$LatoHairline: "LatoHairline", Helvetica, sans-serif;
-$LatoLightIt: "LatoLightIt", Helvetica, sans-serif;
-$LatoLight: "LatoLight", Helvetica, sans-serif;
-$LatoBoldIt: "LatoBoldIt", Helvetica, sans-serif;
-$LatoBold: "LatoBold", Helvetica, sans-serif;
-$LatoBlackIt: "LatoBlackIt", Helvetica, sans-serif;
-$LatoBlack: "LatoBlack", Helvetica, sans-serif;
+$Martel: 'Martel', serif;
+$MartelSans: 'Martel Sans', sans-serif;
 //-- typo:end --//
 
 
