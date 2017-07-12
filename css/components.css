@@ -61,8 +61,7 @@ a {
     background: #CCCCCC; }
 
 .highlight {
-  color: #FFFFFF;
-  background: #8fc581;
+  background: yellow;
   border: 0; }
   .highlight:hover, .highlight:focus {
     color: #FFFFFF;
