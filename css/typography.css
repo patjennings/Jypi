@@ -1,38 +1,8 @@
 @charset "UTF-8";
-@font-face {
-  font-family: 'LatoBlack';
-  src: url("../fonts/Lato-Black.ttf"); }
-@font-face {
-  font-family: 'LatoBlackIt';
-  src: url("../fonts/Lato-BlackItalic.ttf"); }
-@font-face {
-  font-family: 'LatoBold';
-  src: url("../fonts/Lato-Bold.ttf"); }
-@font-face {
-  font-family: 'LatoBoldIt';
-  src: url("../fonts/Lato-BoldItalic.ttf"); }
-@font-face {
-  font-family: 'LatoHairline';
-  src: url("../fonts/Lato-Hairline.ttf"); }
-@font-face {
-  font-family: 'LatoHairlineIt';
-  src: url("../fonts/Lato-HairlineItalic.ttf"); }
-@font-face {
-  font-family: 'LatoLight';
-  src: url("../fonts/Lato-Light.ttf"); }
-@font-face {
-  font-family: 'LatoLightIt';
-  src: url("../fonts/Lato-LightItalic.ttf"); }
-@font-face {
-  font-family: 'LatoIt';
-  src: url("../fonts/Lato-Italic.ttf"); }
-@font-face {
-  font-family: 'Lato';
-  src: url("../fonts/Lato-Regular.ttf"); }
 @media screen and (min-width: 320px) {
   p {
     font-size: 1rem;
-    line-height: 1.5rem; }
+    line-height: 1.75rem; }
 
   h6 {
     font-size: 1rem;
@@ -51,16 +21,20 @@
     line-height: 1.5rem; }
 
   h2 {
-    font-size: 1.5rem;
-    line-height: 1.99999rem; }
+    font-size: 1.75rem;
+    line-height: 2.5rem; }
 
   h1 {
     font-size: 2.25rem;
+    line-height: 2.5rem; }
+
+  blockquote {
+    font-size: 1.5rem;
     line-height: 2.5rem; } }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 640px) {
   p {
     font-size: 1rem;
-    line-height: 1.5rem; }
+    line-height: 1.75rem; }
 
   h6 {
     font-size: 1rem;
@@ -79,16 +53,20 @@
     line-height: 1.5rem; }
 
   h2 {
-    font-size: 1.5rem;
-    line-height: 1.99999rem; }
+    font-size: 1.75rem;
+    line-height: 2.5rem; }
 
   h1 {
     font-size: 2.25rem;
+    line-height: 2.5rem; }
+
+  blockquote {
+    font-size: 1.5rem;
     line-height: 2.5rem; } }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1170px) {
   p {
     font-size: 1rem;
-    line-height: 1.5rem; }
+    line-height: 1.75rem; }
 
   h6 {
     font-size: 1rem;
@@ -107,12 +85,16 @@
     line-height: 1.5rem; }
 
   h2 {
-    font-size: 1.5rem;
-    line-height: 1.99999rem; }
+    font-size: 1.75rem;
+    line-height: 2.5rem; }
 
   h1 {
-    font-size: 2.25rem;
-    line-height: 2.75rem; } }
+    font-size: 3rem;
+    line-height: 3.5rem; }
+
+  blockquote {
+    font-size: 1.5rem;
+    line-height: 2.5rem; } }
 p.small {
   font-size: 0.75rem;
   line-height: 1.5rem; }
@@ -122,36 +104,39 @@ p, h6, h5, h4, h3, h2, h1 {
   font-weight: normal; }
 
 p {
-  font-family: "Lato", Helvetica, sans-serif;
+  font-family: "Martel", serif;
   margin-bottom: 1.5rem; }
 
 h6 {
-  font-family: "LatoBoldIt", Helvetica, sans-serif;
+  font-family: "Martel", serif;
   margin-bottom: 0; }
 
 h5 {
-  font-family: "LatoBold", Helvetica, sans-serif;
+  font-family: "Martel", serif;
   margin-bottom: 0; }
 
 h4 {
-  font-family: "LatoBlack", Helvetica, sans-serif;
+  font-family: "Martel", serif;
   text-transform: uppercase;
   margin-bottom: 0; }
 
 h3 {
-  font-family: "LatoBlack", Helvetica, sans-serif;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1.2px;
-  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
   padding-top: 0.5rem; }
 
 h2 {
-  font-family: "Lato", Helvetica, sans-serif;
-  margin-bottom: 1rem;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 200;
+  margin-bottom: 4rem;
   padding-top: 0.66667rem; }
 
 h1 {
-  font-family: "LatoLight", Helvetica, sans-serif;
+  font-family: "Martel Sans", sans-serif;
+  font-weight: 200;
   margin-bottom: 0.66667rem; }
 
 ul, ol {
@@ -190,10 +175,9 @@ hr::after {
   text-align: center; }
 
 blockquote {
-  line-height: 1.5rem;
   margin: 1rem; }
   blockquote p {
-    font-family: "LatoIt", Helvetica, sans-serif; }
+    font-family: "Martel", serif; }
 
 pre {
   padding: 1rem 1.33333rem;
@@ -211,7 +195,7 @@ table {
     border-top: 1px solid rgba(0, 0, 0, 0.3);
     vertical-align: top;
     padding: 1rem 2rem 1rem 0;
-    font-family: "LatoBold", Helvetica, sans-serif;
+    font-family: "Martel", serif;
     font-weight: normal; }
   table tbody tr td {
     border-top: 1px solid rgba(0, 0, 0, 0.05);
@@ -319,7 +303,7 @@ sup {
         margin-bottom: 7.875pt; }
 
   a {
-    color: #242424;
+    color: #333333;
     text-decoration: underline !important; }
 
   a[href]:after {
@@ -353,7 +337,7 @@ sup {
     margin: 10.5pt;
     border: 0; }
     blockquote p {
-      font-family: "LatoIt", Helvetica, sans-serif; }
+      font-family: "Martel", serif; }
 
   pre {
     padding: 10.5pt 14pt;
@@ -376,7 +360,7 @@ sup {
       border-top: 1px solid rgba(0, 0, 0, 0.3);
       vertical-align: top;
       padding: 7pt 21pt 7pt 0;
-      font-family: "LatoBold", Helvetica, sans-serif;
+      font-family: "Martel", serif;
       font-weight: normal; }
     table tbody tr td {
       border-top: 1px solid rgba(0, 0, 0, 0.05);
