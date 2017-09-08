@@ -18,378 +18,76 @@ html, body{
 	}
 }
 
-.ct-red{
-	background: #E66429;
-	color: #FFF;
-}
-.ct-green{
-	background: url(../assets/waves_oblique_green.svg) 50% 50%;
-
-	background-color: #1ACC58;
-	color: #FFF;
-}
-.ct-blue{
-	background: #020285;
-	color: #FFF;
-}
-.ct-lightblue{
-	background: #5151A9;
-	color: #FFF;
-}
-.ct-illustr{
-	background: url(../assets/ud_illustration_website_tho_vertical_1.svg) center 0;
-	height: 640px;
+.wrapper {
+    width: 1366px;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
-.span-3{
-	margin-left: ($column*3)+($gutter*2);
-}
-.span-4{
-	margin-left: ($column*4)+($gutter*3);
-}
-.span-6{
-	margin-left: ($column*6)+($gutter*5);
-}
-.span-8{
-	margin-left: ($column*8)+($gutter*7);
-}
-// Colonnes
-.col-3{
-	width: ($column*3)+($gutter*2);
-}
-.col-4{
-	width: ($column*4)+($gutter*3);
-}
-.col-6{
-	width: ($column*6)+($gutter*5);
-}
-.col-8{
-	width: ($column*8)+($gutter*7);
-}
-.col-12{
-	width: ($column*12)+($gutter*11);
+.row {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    [class^="col-"]:last-child {
+        padding-right: 0;
+    }
 }
 
-.section-title{
-	text-align: center;
-	width: ($column*8)+($gutter*7);
-	margin: 0 auto;
+@for $i from 1 through 8 {
+    $left: $i * 12.5;
+    .col-#{$i} {
+        width: unquote($left+'%');
+        padding-right: 32px;
+    }
 }
 
-.wrapper{
-	display: flex;
-	flex-direction: row;
-
-	.item{
-		margin-right: $gutter;
-		text-align: center;
-
-		.item-title{
-			height: $vRhythm*5;
-
-			h3{
-				color: $colorGreen;
-			}
-		}
-
-		.item-content{
-			text-align: left;
-		}
-	}
-	.block{
-		margin-right: $gutter;
-		text-align: left;
-	}
+@for $i from 1 through 8 {
+    $left: $i * 12.5;
+    .span-#{$i} {
+        margin-left: unquote($left+'%');
+    }
 }
 
-.item-icon{
-	width: 80px;
-	height: 80px;
-	border-radius: 40px;
-	background: rgba(26, 204, 88, 0.15);
-	text-align: center;
-	margin: 0 auto;
-	margin-bottom: $vRhythm*2;
-
-	i{
-		color: #1ACC58;
-		padding-top: $vRhythm*1.2;
-	}
+.last {
+    padding-right: 0;
 }
 
-#logo{
-	width: 334px;
-	height: 140px;
-	background: url(../assets/triangle.svg);
-	position: absolute;
-	top: 0;
-	left: 0;
-
-	#udlogo_hype_container{
-		position: relative;
-		top: 24px;
-		left: 64px;
-	}
-}
-#header{
-	#nav{
-
-	}
-	#baseline{
-		text-align: center;
-		position: relative;
-		top: 192px;
-		width: ($column*6)+($gutter*5);
-		margin: 0 auto;
-
-		h1{
-			color: $colorGreen;
-		}
-	}
-
-}
-
-#boutique-sentence{
-	padding: $vRhythm;
-}
-
-#three-items{
-	padding-bottom: $vRhythm*3;
-
-}
-
-#testimonials{
-	padding-bottom: $vRhythm*3;
-	text-align: center;
-	width: ($column*6)+($gutter*5);
-	margin: 0 auto;
-}
-
-#projects{
-	padding-top: $vRhythm*3;
-
-	h2{
-		color: $colorGreen;
-	}
-
-	.multi-column{
-
-		display: flex;
-
-		.col{
-			position: relative;
-			display: flex;
-			flex-direction: column;
-			margin-right: $gutter;
-		}
 
 
-		.height-1{
-			.project{
-				height: 320px;
-			}
-		}
-		.height-2{
-			.project{
-				height: 672px;
-			}
-		}
-
-		.sentence{
-			margin-bottom: $gutter;
-			color: #FFF;
-			height: 100%;
-
-			background: url(../assets/waves_oblique_blue.svg) 50% 50%;
-			background-color: #26509A;
-
-			.sentence-content{
-				margin: 32px;
-
-				p{
-					font-size: 1.25rem;
-					line-height: 1.75rem;
-				}
-			}
-		}
-
-		.project{
-			background: #FC0;
-			width: 100%;
-			margin-bottom: $gutter;
-			color: #FFF;
-
-
-			.project-logo{
-				margin-top: 192px;
-				margin-left: 32px;
-			}
-			.project-title{
-				margin-left: 32px;
-			}
-		}
-	}
-}
-#partners{
-	padding-bottom: $vRhythm*3;
-
-	h2{
-		color: $colorGreen;
-	}
-
-}
-#caravel{
-	.wrapper{
-		background: url(../files/screenshot_caravel.png) -256px -28px;
-		padding-bottom: $vRhythm*3;
-		.block{
-
-		}
-	}
-}
-#contact{
-	.wrapper{
-		background: url(../assets/illustration_agence.png) no-repeat;
-		padding-bottom: $vRhythm*3;
-
-		.block{
-
-		}
-	}
-}
-
-#people{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin-top: $vRhythm*-3;
-
-	.pic{
-		width: 96px;
-		height: 96px;
-		background-color: #020285;
-		background-blend-mode: screen;
-	}
-}
-
-#numeros{
-
-	.wrapper{
-		.block{
-			text-align: center;
-
-			h3{
-				color: #020285;
-			}
-
-			.phone_number{
-				font-size: $baseRem*3;
-				color: #020285;
-				font-family: $MartelSans;
-			}
-			.logo-small{
-				margin-bottom: $vRhythm;
-			}
-		}
-	}
-
-
-}
 
 @media screen and (min-width: $break-small) and (max-width: $break-medium) {
 
 	body{
-		// background: yellow;
 		width: 100%;
-		// overflow: hidden;
-	}
-
-	.container{
-		.container-inner{
-			width: 90%;
-			// padding-left: $vRhythm;
-			// padding-right: $vRhythm;
-
-			.col-3, .col-4, .col-6, .col-8, .col-12{
-				width: 100%;
-			}
-			.span-3, .span-4, .span-6, .span-8{
-				margin-left: 0;
-			}
-
-			.section-title{
-				width: 100%;
-			}
-
-			.wrapper{
-				display: flex;
-				flex-direction: column;
-
-				.item{
-					margin-bottom: $vRhythm*3;
-
-					.item-title{
-					}
-
-					.item-content{
-						text-align: center;
-					}
-				}
-				.block{
-				}
-			}
-			#header #baseline{width:100%;}
-			#testimonials{width:100%;}
-			#projects{
-				.multi-column{
-					  display: block;
-				}
-			}
-			#contact{
-				.wrapper{
-					background: none;
-
-				}
-			}
-		}
-	}
-}
-@media screen and (min-width: $break-medium) and (max-width: $break-large) {
-
-	 body{
-		//  background: green;
-
-	 }
-
-	$column: 6%;
-	$gutter: 2.56%;
-
-	.container{
-		.container-inner{
-			padding-left: $vRhythm;
- 		 padding-right: $vRhythm;
-			width: ($column*12)+($gutter*11);
-		}
 	}
 }
 
-@media screen and (min-width: $break-large) {
-
-	 body{
-		//  background: blue;
-	 }
-
-	.container{
-		.container-inner{
-			width: ($column*12)+($gutter*11);
-		}
-	}
-}
-@media print {
-	body{
-
-	}
-	.container{
-
-	}
+@media (max-width: $break-medium) {
+    .wrapper {
+        width: 85%;
+        margin: 0 auto;
+    }
+    .row {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+    }
+    @for $i from 1 through 8 {
+        $left: $i * 12.5;
+        .col-#{$i} {
+            width: 100%;
+        }
+    }
+    @for $i from 1 through 8 {
+        $left: $i * 12.5;
+        .span-#{$i} {
+            margin-left: 0;
+        }
+    }
 }
