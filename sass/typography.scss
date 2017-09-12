@@ -1,4 +1,6 @@
+@import 'normalize';
 @import 'variables';
+@import 'utils';
 
 @media screen and (min-width: $break-small) {
 	p{ font-size: $baseRem; line-height: $baseRem*1.75;}
@@ -23,10 +25,10 @@
 
 @media screen and (min-width: $break-large) {
 	p{ font-size: $baseRem; line-height: $baseRem*1.75;}
-	h6{ font-size: $baseRem; line-height: $baseRem*1.5;}
-	h5{ font-size: $baseRem; line-height: $baseRem*1.5; }
-	h4{ font-size: $baseRem; line-height: $baseRem*1.5; }
-	h3{ font-size: $baseRem; line-height: $baseRem*1.5; }
+	h6{ font-size: $baseRem; line-height: $baseRem*1.75;}
+	h5{ font-size: $baseRem; line-height: $baseRem*1.75; }
+	h4{ font-size: $baseRem; line-height: $baseRem*1.75; }
+	h3{ font-size: $baseRem; line-height: $baseRem*1.75; }
 	h2{ font-size: $baseRem*1.75; line-height: $baseRem*2.5; }
 	h1{ font-size: $baseRem*3; line-height: $baseRem*3.5; }
 	blockquote{ font-size: $baseRem*1.5; line-height: $baseRem*2.5; }
@@ -40,38 +42,41 @@ p, h6, h5, h4, h3, h2, h1{
 }
 
 p{
-	font-family: $Martel;
+	font-family: $serif;
 	margin-bottom: $baseRem*1.5;
 }
 h6{
-	font-family: $Martel;
+	font-family: $serif;
 	margin-bottom: 0;
+	font-weight: 600;
 }
 h5{
-	font-family: $Martel;
+	font-family: $serif;
+	font-weight: 600;
 	margin-bottom: 0;
 }
 h4{
-	font-family: $Martel;
+	font-family: $serif;
+	font-weight: 600;
 	text-transform: uppercase;
 	margin-bottom: 0;
 }
 h3{
-	font-family: $MartelSans;
-	font-weight: 700;
+	font-family: $sansSerif;
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 2px;
-	margin-bottom: $baseRem*2;
+	margin-bottom: $baseRem;
 	padding-top: $baseRem/2;
 }
 h2{
-	font-family: $MartelSans;
+	font-family: $sansSerif;
 	font-weight: 200;
-	margin-bottom: $baseRem*4;
+	margin-bottom: $baseRem;
 	padding-top: $baseRem/1.5;
 }
 h1{
-	font-family: $MartelSans;
+	font-family: $sansSerif;
 	font-weight: 200;
 	margin-bottom: $baseRem*0.666667;
 }
@@ -127,18 +132,19 @@ blockquote{
 	margin: $baseRem;
 
 	p{
-		font-family: $Martel;
+		font-family: $serif;
 	}
 }
 
 pre{
-
 	padding: $baseRem $baseRem*1.333333;
 	background-color: rgba(0,0,0,0.03);
+
 
 	code{
 		font-size: $baseRem;
 		line-height: $baseRem*1.5;
+		font-family: $mono;
 	}
 }
 table{
@@ -155,7 +161,7 @@ table{
 				border-top: 1px solid rgba(0,0,0, 0.3);
 				vertical-align: top;
 				padding: $baseRem $baseRem*2 $baseRem 0;
-				font-family: $Martel;
+				font-family: $serif;
 				font-weight: normal;
 			}
 		}
@@ -276,7 +282,7 @@ sup{
 		}
 	}
 	a{
-		color: $colorTextDark;
+		color: black;
 		text-decoration: underline!important;
 	}
 	a[href]:after {
@@ -312,7 +318,7 @@ sup{
 		border: 0;
 
 		p{
-			font-family: $Martel;
+			font-family: $serif;
 		}
 	}
 
@@ -344,7 +350,7 @@ sup{
 					border-top: 1px solid rgba(0,0,0, 0.3);
 					vertical-align: top;
 					padding: $basePt/1.5 $basePt*2 $basePt/1.5 0;
-					font-family: $Martel;
+					font-family: $serif;
 					font-weight: normal;
 				}
 			}

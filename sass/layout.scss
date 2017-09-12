@@ -1,15 +1,17 @@
+// @import 'normalize';
 @import 'variables';
+@import 'utils';
 
 html, body{
-	font-family: $Martel;
-	color: $colorTextDark;
+	font-family: $serif;
+	color: black;
 
 	// background-image: url(../assets/rhythm.png);
 }
 
+// If a background needs to be applied on all width, independent from the .wrapper width
 .container{
 	width: 100%;
-	// background: #EEE;
 
 	.container-inner{
 		margin: 0 auto;
@@ -19,7 +21,7 @@ html, body{
 }
 
 .wrapper {
-    width: 1366px;
+    width: $totalWidth;
     max-width: 90%;
     margin: 0 auto;
 }
@@ -38,18 +40,20 @@ html, body{
     }
 }
 
-@for $i from 1 through 8 {
-    $left: $i * 12.5;
+// col-n is defined here
+@for $i from 1 through $columns {
+    $width: $i * (100/$columns);
     .col-#{$i} {
-        width: unquote($left+'%');
-        padding-right: 32px;
+        width: unquote($width+'%');
+        padding-right: $gutter;
     }
 }
 
-@for $i from 1 through 8 {
-    $left: $i * 12.5;
+// span-n is defined here
+@for $i from 1 through $columns {
+    $width: $i * (100/$columns);
     .span-#{$i} {
-        margin-left: unquote($left+'%');
+        margin-left: unquote($width+'%');
     }
 }
 

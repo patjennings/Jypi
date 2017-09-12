@@ -1,6 +1,30 @@
+@font-face {
+  font-family: "rubik";
+  src: url("../fonts/Rubik-Regular.ttf"); }
+@font-face {
+  font-family: "rubik";
+  font-style: italic;
+  src: url("../fonts/Rubik-Italic.ttf"); }
+@font-face {
+  font-family: "rubik";
+  font-weight: bold;
+  src: url("../fonts/Rubik-Bold.ttf"); }
+@font-face {
+  font-family: "rubik";
+  font-weight: bold;
+  font-style: italic;
+  src: url("../fonts/Rubik-BoldItalic.ttf"); }
+@font-face {
+  font-family: "fira-mono";
+  src: url("../fonts/FiraMono-Regular.otf"); }
+@font-face {
+  font-family: "fira-mono";
+  font-weight: bold;
+  src: url("../fonts/FiraMono-Bold.otf"); }
+/* FUNCTIONS */
 html, body {
-  font-family: "Martel", serif;
-  color: #333333; }
+  font-family: "rubik", Times, serif;
+  color: black; }
 
 .container {
   width: 100%; }

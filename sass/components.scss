@@ -1,40 +1,33 @@
+// @import 'normalize';
 @import 'variables';
+@import 'utils';
 
 a{
-	font-family: $Martel;
 	color: $colorTextBlue;
-
-	font-size: $baseRem/$ms0;
-
-	-webkit-transition: all $transitionSpeed ease-out;
-	-moz-transition: all $transitionSpeed ease-out;
-	-o-transition: all $transitionSpeed ease-out;
-	transition: all $transitionSpeed ease-out;
+	@include transition(all, $hoverSpeed, $hoverEase);
 
 	&:hover{
 		color: $colorTextBlue;
 		opacity: 0.5;
 	}
-
 	&:active{}
 	&:focus{}
 }
 
 // Buttons
-
 .btn{
-	padding: $vRhythm/2 $vRhythm;
-	border: 1px solid $colorTransparentGrey;
-	background: $colorWhite;
-	border-radius: 3px;
+	padding: $baseRem/2 $baseRem $baseRem/2 $baseRem;
 	text-decoration: none;
-	color: $colorTextDark;
-	font-size: $baseRem/$ms0;
+	font-size: $baseRem;
+	font-family: $sansSerif;
+	border-radius: 0;
 
-	-webkit-transition: color $transitionSpeed ease-out, background-color $transitionSpeed ease-out;
-	-moz-transition: color $transitionSpeed ease-out, background-color $transitionSpeed ease-out;
-	-o-transition: color $transitionSpeed ease-out, background-color $transitionSpeed ease-out;
-	transition: color $transitionSpeed ease-out, background-color $transitionSpeed ease-out;
+	// default
+	background: $colorWhite;
+	border: 1px solid $colorTransparentGrey;
+	color: $colorTextDark;
+
+	@include transition(all, $hoverSpeed, $hoverEase);
 
 	&:hover, &:focus{
 		color: $colorTextDark;
@@ -46,161 +39,147 @@ a{
 		background: $colorLightGrey;
 
 	}
-}
 
-.highlight{
-	//color: $colorWhite;
-	background: yellow;
-	border: 0;
+	// Bigger
+	&.big{
+		font-size: $baseRem*1.25;
+		padding: $baseRem/1.5 $baseRem*1.125 $baseRem/1.5 $baseRem*1.125;
+	}
+	// Smaller
+	&.small{
+		font-size: $baseRem/1.333;
+		padding: $baseRem/2.5 $baseRem/1.5 $baseRem/2.5 $baseRem/1.5;
+	}
 
-	&:hover, &:focus{
+	// Validation
+	&.validate{
+		background: $colorGreen;
+		border: 0;
 		color: $colorWhite;
-		background: $colorGreenLight;
-		outline: 0;
-	}
-	&:active{
-		color: $colorWhite;
-		background: $colorGreenLow;
-	}
-}
 
-.caution{
-	color: $colorWhite;
-	background: $colorRed;
-	border: 0;
-
-	&:hover, &:focus{
-		color: $colorWhite;
-		background: $colorRedLight;
-		outline: 0;
-	}
-	&:active{
-		color: $colorWhite;
-		background: $colorRedLow;
-	}
-}
-
-.big{
-	padding: $vRhythm/1.3333 $vRhythm;
-	display: flex;
-
-	i{
-		padding: 0 $vRhythm/2 0 0;
-	}
-}
-
-.ico-btn{
-	width: $vRhythm*2;
-	height: $vRhythm*2;
-	padding: 0;
-	background: $colorWhite;
-	border-radius: 20px;
-	border: 0;
-	color: $colorTextGrey;
-	//display: flex;
-	//align-items: baseline;
-
-	&:hover, &:focus{
-		//color: $colorWhite;
-		background: $colorLighterGrey;
-		outline: 0;
-	}
-	&:active{
-
-	}
-	i{
-		margin-top: 4px;
-	}
-
-}
-
-.add-btn{
-	border: none;
-	background: none;
-	color: $colorBlue;
-	font-size: $baseRem*$msSmall;
-	line-height: 1px;
-	display: flex;
-	align-items: center;
-
-	i{
-		padding: 0 $vRhythm/2 0 0;
-	}
-
-
-	&:hover, &:focus{
-		color: $colorBlueLight;
-		background: none;
-		outline: 0;
-	}
-	&:active{
-		color: $colorBlueLow;
-		background: none;
-	}
-}
-
-.disabled{
-	opacity: 0.5;
-	pointer-events: none;
-}
-// Forms
-
-.form-wrapper{
-
-	display: flex;
-	align-items: center;
-	margin-bottom: $vRhythm;
-
-	label{
-		width: 20%;
-		display: block;
-		float: left;
-		text-align: right;
-
-		padding: 0 $vRhythm/2;
-		font-size: 0.75rem;
-		color: $colorGrey;
-	}
-
-	input, textarea, select{
-		width: 70%;
-		display: block;
-		padding: $vRhythm/2;
-		background: $colorWhite;
-
-		font-size: $baseRem/$ms0;
-
-		border: 1px solid $colorLighterGrey;
-		border-radius: 3px;
-
-		-webkit-transition: border-color $transitionSpeed ease-out;
-		-moz-transition: border-color $transitionSpeed ease-out;
-		-o-transition: border-color $transitionSpeed ease-out;
-		transition: border-color $transitionSpeed ease-out;
-
-		&:hover{
-			border-color: $colorLightGrey;
+		&:hover, &:focus{
+			color: $colorWhite;
+			background: $colorGreenLight;
+			outline: 0;
 		}
-		&:focus{
-			border-color: $colorGreyDark;
-			border-width: 1px;
-			outline: none;
+		&:active{
+			color: $colorWhite;
+			background: $colorGreenLow;
 		}
 	}
 
-	select{
-		background: transparent;
-		-webkit-appearance: none;
+	// Caution
+	&.caution{
+		background: $colorRed;
+		border: 0;
+		color: $colorWhite;
 
-		background: url(../assets/caret-down.svg) no-repeat 97% center;
+		&:hover, &:focus{
+			color: $colorWhite;
+			background: $colorRedLight;
+			outline: 0;
+		}
+		&:active{
+			color: $colorWhite;
+			background: $colorRedLow;
+		}
 	}
 
+	// Without strokes
+	&.no-stroke{
+		color: $colorBlue;
+		border: 0;
+		background: none;
 
+		&:hover, &:focus{
+			color: $colorBlueLight;
+			background: none;
+			outline: 0;
+		}
+		&:active{
+			color: $colorBlueLow;
+			background: none;
+		}
+	}
+
+	// Icon that is with a label
+	&.icon{
+		padding: $baseRem/1.3333 $baseRem;
+
+		i{
+			padding: 0 $baseRem/2 0 0;
+		}
+	}
+
+	// Only the icon
+	&.no-text{
+		i{
+			padding: 0;
+		}
+	}
+
+	// Disabled
+	&.disabled{
+		opacity: 0.5;
+		pointer-events: none;
+	}
 }
 
+
+
+
+
+
+
+
 // Forms
+.form{
+	text-align: center;
+	.form--wrapper{
+		display: flex;
+		// align-items: center;
+		margin-bottom: $baseRem;
 
+		label{
+			width: 20%;
+			display: block;
+			float: left;
+			text-align: right;
+			margin-top: $baseRem/1.5;
 
+			padding: 0 $baseRem;
+			font-size: 0.75rem;
+			color: $colorGrey;
+		}
 
+		input, textarea, select{
+			width: 70%;
+			display: block;
+			padding: $baseRem/2;
+			background: $colorWhite;
 
-// Misc
+			font-size: $baseRem;
+
+			border: 1px solid $colorLighterGrey;
+			border-radius: 3px;
+
+			@include transition(border-color, $hoverSpeed, $hoverEase);
+
+			&:hover{
+				border-color: $colorLightGrey;
+			}
+			&:focus{
+				border-color: $colorGreyDark;
+				border-width: 1px;
+				outline: none;
+			}
+		}
+
+		select{
+			background: transparent;
+			-webkit-appearance: none;
+
+			background: url(../assets/caret-down.svg) no-repeat 97% center;
+		}
+	}
+}
