@@ -1,15 +1,20 @@
 # styles-sandbox
-A SASS stylesheets set for web apps
+A starting set for websites & various applications.
 
-### Add CSS to your HTML files
-    <link rel="stylesheet" type="text/css" href="https://github.com/patjennings/styles-sandbox/blob/master/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="https://github.com/patjennings/styles-sandbox/blob/master/css/main.css">
-    <link rel="stylesheet" type="text/css" href="https://github.com/patjennings/styles-sandbox/blob/master/css/typography.css" />
-    <link rel="stylesheet" type="text/css" href="https://github.com/patjennings/styles-sandbox/blob/master/css/components.css" />
-    <link rel="stylesheet" type="text/css" href="https://github.com/patjennings/styles-sandbox/blob/master/css/layout.css" />
-    <link rel="stylesheet" type="text/css" href="https://github.com/patjennings/styles-sandbox/blob/master/css/pajeweic.css">
+## Installation
+    $ npm install
 
-### sass.sh
-To listen to sass files updates and create related css files, run the sass.sh script in the terminal
+## Start
+    $ cd /styles-sandbox
+    $ npm start
+This will run the gulp task that compile sass files, fonts, js & images
 
-    $ sh sass.sh
+work in `/client`, then Gulp compiles in `/public` 
+
+## Elements
+- Layout
+- typography for both screen and print
+- Buttons
+
+## Add custom fonts
+Add custom Base64 CSS font files

@@ -1,30 +1,23 @@
-/* Pajeweic is for PAt JEnnings WEbfont ICon */
+@import 'variables';
 
-@font-face {
-  font-family: 'fontIcon';
-  src: url("../fonts/Pajeweic-Regular.eot");
-  src: url("../fonts/Pajeweic-Regular.woff2") format("woff2"), url("../fonts/Pajeweic-Regular.woff") format("woff"), url("../fonts/Pajeweic-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+.ico {
+  display: inline-block;
+  font: normal normal normal 14px/1 'icons';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  vertical-align: middle;
+}
 
-  .ico {
-    display: inline-block;
-    font: normal normal normal 14px/1 'fontIcon';
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    vertical-align: middle;
-  }
-
-  .ico-small{
-  	font-size: 1rem;
-  }
-  .ico-medium{
-  	font-size: 1.5rem;
-  }
-  .ico-large{
-  	font-size: 2rem;
-  }
+.ico-small{
+	font-size: 1rem;
+}
+.ico-medium{
+	font-size: 1.5rem;
+}
+.ico-large{
+	font-size: 2rem;
+}
 ​
 .ico-big:before {
  font-size: 3rem;

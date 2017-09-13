@@ -1,11 +1,9 @@
-// @import 'normalize';
 @import 'variables';
 @import 'utils';
 
 a{
 	color: $colorTextBlue;
 	@include transition(all, $hoverSpeed, $hoverEase);
-
 	&:hover{
 		color: $colorTextBlue;
 		opacity: 0.5;
@@ -124,12 +122,6 @@ a{
 		pointer-events: none;
 	}
 }
-
-
-
-
-
-
 
 
 // Forms

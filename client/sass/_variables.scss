@@ -1,32 +1,5 @@
-@font-face {
-    font-family: "rubik";
-    src: url('../fonts/Rubik-Regular.ttf');
-}
-@font-face {
-    font-family: "rubik";
-    font-style: italic;
-    src: url('../fonts/Rubik-Italic.ttf');
-}
-@font-face {
-    font-family: "rubik";
-    font-weight: bold;
-    src: url('../fonts/Rubik-Bold.ttf');
-}
-@font-face {
-    font-family: "rubik";
-    font-weight: bold;
-    font-style: italic;
-    src: url('../fonts/Rubik-BoldItalic.ttf');
-}
-@font-face {
-    font-family: "fira-mono";
-    src: url('../fonts/FiraMono-Regular.otf');
-}
-@font-face {
-    font-family: "fira-mono";
-    font-weight: bold;
-    src: url('../fonts/FiraMono-Bold.otf');
-}
+@import "icons"; // CSS icon font file created with gulp-inline-fonts
+@import "fonts"; // CSS font file created with gulp-inline-fonts
 
 $columns: 8; // The column-width of your grid in pixels — should be even like 6, 8, 12, 14, etc.
 $gutter: 32px; // The gutter-width of your grid in pixels
@@ -71,9 +44,9 @@ $colorWhite: #FFFFFF;
 //-- colors:end --//
 
 //-- typo:start --//
-$serif: 'rubik', Times, serif;
-$sansSerif: 'rubik', Times, serif;
-$mono: 'fira-mono', Courier, monospace;
+$serif: 'serif', Times, serif;
+$sansSerif: 'sans', Times, serif;
+$mono: 'mono', Courier, monospace;
 //-- typo:end --//
 
 $baseRem: 1rem;
