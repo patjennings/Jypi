@@ -1,6 +1,9 @@
 @import "icons"; // CSS icon font file created with gulp-inline-fonts
 @import "fonts"; // CSS font file created with gulp-inline-fonts
 
+$baseRem: 1rem;
+$basePt: 10.5pt;
+
 $totalWidth: 1366px; // Can be fix or floating value
 $columns: 8; // The column-width of your grid in pixels — should be even like 6, 8, 12, 14, etc.
 $gutter: 32px; // The gutter-width of your grid in pixels
@@ -11,9 +14,6 @@ $break-large: 1170px;
 
 $hoverSpeed: 0.2s;
 $hoverEase: ease-in-out;
-
-$baseRem: 1.125rem;
-$basePt: 10.5pt;
 
 //-- typo:start --//
 $colorGreenLow: #74a467;

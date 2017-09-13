@@ -1,5 +1,5 @@
 @import 'variables';
-@import 'utils';
+@import 'mixins';
 
 @media screen and (min-width: $break-small) {
 	p{ font-size: $baseRem; line-height: $baseRem*1.75;}

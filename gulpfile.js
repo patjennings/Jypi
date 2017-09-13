@@ -56,7 +56,7 @@ gulp.task('fonts', function() {
   var fontStream = merge();
 
   fontStyles.forEach(function(style){
-    [200, 400, 700].forEach(function(weight) {
+    [100, 200, 300, 400, 500, 600, 700, 800, 900].forEach(function(weight) {
 
       // a regular version
       fontStream.add(gulp.src(paths.fonts+`${style}-${weight}.woff`)
