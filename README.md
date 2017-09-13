@@ -20,6 +20,12 @@ You should include `_variables.scss` and `_mixins.scss` at the top of each new s
 
 ### Variables
 In \_variables.scss file
+
+These values will ensure visual consistency across your website. Every (every) spacing, font-size or whatever is based on this ($baseRem for screen, $basePt for print).
+```scss
+$baseRem: 1rem;
+$basePt: 10.5pt;
+```
 The total width of your main container. It can be fixed, or floating (e.g.100%)
 ```scss
 $totalWidth: 1366px;
@@ -42,11 +48,6 @@ The main values for standard animations. Help consistency across each small anim
 ```scss
 $hoverSpeed: 0.2s;
 $hoverEase: ease-in-out;
-```
-These values will ensure visual consistency across your website. Every (every) spacing, font-size or whatever is based on this ($baseRem for screen, $basePt for print).
-```scss
-$baseRem: 1rem;
-$basePt: 10.5pt;
 ```
 
 ### Mixins
