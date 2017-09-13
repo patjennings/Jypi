@@ -15,6 +15,7 @@ var del = require('del'),
     merge  = require('merge-stream'),
 	  log = util.log;
 
+// Path for gulp compilation
 var paths = {
   scripts: ['client/js/**/*.js', '!client/external/**/*.js'],
   images: 'client/images/**/*',
