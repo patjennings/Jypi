@@ -1,5 +1,5 @@
-# styles-sandbox
-A starting set for websites & various applications.
+# Jypi
+Jypi is a starter kit for websites & various applications.
 
 ## Installation
     $ npm install
