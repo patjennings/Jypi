@@ -8,8 +8,8 @@ $totalWidth: 1366px; // Can be fix or floating value
 $columns: 8; // The column-width of your grid in pixels — should be even like 6, 8, 12, 14, etc.
 $gutter: 32px; // The gutter-width of your grid in pixels
 
-$break-small: 320px;
-$break-medium: 640px;
+$break-small: 480px;
+$break-medium: 800px;
 $break-large: 1170px;
 
 $hoverSpeed: 0.2s;

@@ -40,8 +40,8 @@ $gutter: 32px;
 ```
 The breakpoints for responsive behaviour. Basically : smartphone, portrait tablet & laptop++
 ```scss
-$break-small: 320px;
-$break-medium: 640px;
+$break-small: 640px;
+$break-medium: 800px;
 $break-large: 1170px;
 ```
 The main values for standard animations. Help consistency across each small animation, like hovers

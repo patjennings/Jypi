@@ -1,5 +1,5 @@
 {
-  "name": "tg-portfolio",
+  "name": "jypi",
   "version": "0.1.0",
   "scripts": {
     "start": "gulp"
@@ -17,9 +17,9 @@
     "path": "~0.12.7"
   },
   "author": "thomas <bonjour@thomasguesnon.fr>",
-  "description": "Portfolio de Thomas Guesnon",
-  "repository": "",
-  "license": "",
+  "description": "Jypi is a starter kit for designing websites & various applications.",
+  "repository": "https://github.com/patjennings/Jypi.git",
+  "license": "GNU GPLv3",
   "devDependencies": {
     "babel-eslint": "^7.2.3",
     "babel-loader": "^7.1.2",
