@@ -1,5 +1,5 @@
 # Jypi
-Jypi is a starter kit for websites & various applications.
+Jypi is a starter kit for designing websites & various applications.
 
 ## Installation
     $ npm install
