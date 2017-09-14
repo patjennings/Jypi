@@ -19,7 +19,7 @@ You should include `_variables.scss` and `_mixins.scss` at the top of each new s
 ```
 
 ### Variables
-In \_variables.scss file
+In `client/sass/_variables.scss`
 
 These values will ensure visual consistency across your website. Every (every) spacing, font-size or whatever is based on this ($baseRem for screen, $basePt for print).
 ```scss
@@ -51,9 +51,31 @@ $hoverEase: ease-in-out;
 ```
 
 ### Mixins
-Use for transition handled for all browsers
+Use mixin for cross-browser features
+Simple transition
 ```scss
 @include transition(all, 0.2s, ease-in-out);
+```
+For a keyframe-based animation, you can use this
+```scss
+// Declare animation like this
+@include animation('myAnimation .5s cubic-bezier(0.5, 0, 0.5, 1)');
+// Maybe you will want to delay start
+@include animation-delay(2s);
+// Here are the keyframes  
+@include keyframes(myAnimation){
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+```
+For border-radius
+```scss
+@include border-radius; // With the default value (4px)
+@include border-radius(8px); // Or with a custom value
 ```
 
 ## Layout

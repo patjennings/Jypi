@@ -46,3 +46,12 @@
         @content;
     }
 }
+
+@mixin border-radius($radius: 4px){
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  -khtml-border-radius: $radius;
+  border-radius: $radius;
+}

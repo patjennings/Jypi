@@ -4,6 +4,7 @@
 a{
 	color: $colorTextBlue;
 	@include transition(all, $hoverSpeed, $hoverEase);
+
 	&:hover{
 		color: $colorTextBlue;
 		opacity: 0.5;

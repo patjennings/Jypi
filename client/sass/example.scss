@@ -1,0 +1,24 @@
+@import 'variables';
+@import 'mixins';
+
+.pulsation{
+  position: fixed;
+  width: $baseRem*2;
+  height: $baseRem*2;
+  background: red;
+  top: $baseRem*2;
+  left: $baseRem*2;
+
+  @include border-radius($baseRem);
+
+  @include animation('cloudAnimate .75s cubic-bezier(0.5, 0, 0.5, 1) infinite');
+  @include animation-delay(2s);
+  @include keyframes(cloudAnimate){
+    0%, 100%{
+      opacity: 0;
+    }
+    50%{
+      opacity: 1;
+    }
+  }
+}
