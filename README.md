@@ -5,7 +5,7 @@ Jypi is a starter kit for designing websites & various applications.
     $ npm install
 
 ## Start
-    $ cd /styles-sandbox
+    $ cd /Jypi
     $ npm start
 This will run the gulp task that compile sass files, fonts, js & images
 
