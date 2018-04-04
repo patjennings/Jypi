@@ -202,7 +202,7 @@ sup{
 		margin-bottom: 0;
 		text-indent: $basePt;
 		orphans: 3; /* pas de ligne seule en bas */
-    widows: 3; /* pas de ligne seule en haut */
+    	widows: 3; /* pas de ligne seule en haut */
 	}
 	h6{
 		font-size: $basePt;
@@ -234,6 +234,7 @@ sup{
 		page-break-after: avoid; /* pas de saut après ces éléments */
 	}
 	h2{
+		font-weight: 600;
 		font-size: $basePt*1.5;
 		line-height: $basePt*2;
 		margin-top: $basePt*1.5;
@@ -242,12 +243,16 @@ sup{
 		page-break-after: avoid; /* pas de saut après ces éléments */
 	}
 	h1{
+		font-weight: 600;
 		font-size: $basePt*2.25;
 		line-height: $basePt*3;
 		margin-top: $basePt*1.5;
 		margin-bottom: $basePt*1.5;
 		//page-break-before: always; /* chaque titre commence sur une nouvelle page */
 		page-break-after: avoid; /* pas de saut après ces éléments */
+	}
+	h1, h2, h3, h4, h5, h6, p{
+		font-family: $serif;
 	}
 	ul, ol{
 		margin-top: 0;
@@ -380,6 +385,6 @@ sup{
 		line-height: 0;
 	}
 
-	@page { margin: $basePt*6 $basePt*9 $basePt*7 $basePt*9; }
-  body { margin: 1.6cm; }
+	@page { margin: $basePt*4 $basePt*6.5 $basePt*7 $basePt*6.5; }
+  	body { margin: 1.6cm; }
 }

@@ -14,6 +14,7 @@ var del = require('del'),
     flatten = require('gulp-flatten'),
     merge  = require('merge-stream'),
 	  log = util.log;
+var plumber = require('gulp-plumber');
 
 // Path for gulp compilation
 var paths = {
@@ -33,15 +34,17 @@ gulp.task('clean', function() {
 });
 
 gulp.task("sass", function(){
+
 	log("Generate CSS files " + (new Date()).toString());
-  gulp.src(paths.sass)
-  .pipe(sass({ style: 'expanded' }))
-  			.pipe(autoprefixer("last 3 version","safari 5", "ie 8", "ie 9"))
-  .pipe(concat('all.css'))
-  .pipe(gulp.dest("public/css"))
-  .pipe(rename({suffix: '.min'}))
-  .pipe(minifycss())
-  .pipe(gulp.dest('public/css'));
+    gulp.src(paths.sass)
+      .pipe(plumber())
+      .pipe(sass({ style: 'expanded' }))
+      			.pipe(autoprefixer("last 3 version","safari 5", "ie 8", "ie 9"))
+      .pipe(concat('all.css'))
+      .pipe(gulp.dest("public/css"))
+      .pipe(rename({suffix: '.min'}))
+      .pipe(minifycss())
+      .pipe(gulp.dest('public/css'));
 });
 
 gulp.task('icons', function() {
@@ -76,6 +79,7 @@ gulp.task('scripts', ['clean'], function() {
   // Minify and copy all JavaScript (except vendor scripts)
   // with sourcemaps all the way down
   return gulp.src(paths.scripts)
+    .pipe(plumber())
     .pipe(sourcemaps.init())
       // .pipe(coffee())
       .pipe(uglify())
